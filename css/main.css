@@ -1,0 +1,220 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@-webkit-keyframes slideanim {
+  12.5% {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  25% {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  57.5% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideanim {
+  12.5% {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  25% {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  57.5% {
+    opacity: 0;
+  }
+}
+.banner {
+  min-width: 320px;
+}
+.banner__wrapper {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.banner__link {
+  width: 100%;
+  height: 100%;
+}
+.banner__frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  background-color: #558324;
+  padding: 33px 28px 33px 21px;
+  overflow: hidden;
+  -webkit-animation: slideanim 10.5s infinite;
+  animation: slideanim 10.5s infinite;
+  pointer-events: none;
+  opacity: 1;
+  margin: 0 0 50px 0;
+}
+.banner__frame-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.banner__frame-2 {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+  opacity: 0;
+}
+.banner__frame-3 {
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  opacity: 0;
+}
+
+.frame-1__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 100%;
+  color: #fff;
+  margin: 0;
+}
+
+.frame__logo {
+  width: 241px;
+  height: 33px;
+  margin: 0 0 23px 0;
+}
+.frame__image {
+  width: 274px;
+  height: 380px;
+  margin: 0 0 12px 0;
+}
+.frame__descr {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0;
+  letter-spacing: -0.02em;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.frame-2__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 90%;
+  color: #fff;
+  margin: 0;
+}
+
+.frame-3__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: left;
+  margin: 115px 0 0 0;
+  max-width: 250px;
+}
+.frame-3__age {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 100%;
+  margin: 0 0 7px 0;
+  color: #fff;
+  opacity: 0.5;
+}
+.frame-3__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  opacity: 0.5;
+  margin: 0 0 11px 0;
+}
+.frame-3__bottom {
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 100%;
+  letter-spacing: -0.075em;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  margin: 0;
+}

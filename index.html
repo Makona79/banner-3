@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banner</title>
+  <meta name="ad.size" content="width=300,height=600">
+  <meta name="description" content="Author: E.G.Kalukov, Category:banner">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page__body">
+  <div class="banner">
+  <div class="banner__wrapper">
+    <a id="click_area" href="#" target="_blank" class="banner__link">
+      <div class="banner__frame banner__frame-1 frame-1">
+        <img src="img/logo.svg" alt="logo" width="241" height="33" class="frame__logo">
+        <h1 class="frame-1__title">Витамины с iHerb</h1>
+        <div class="frame__image">
+          <picture>
+            <source srcset="img/img1.webp" type="image/webp">
+            <img loading="lazy" src="img/img1.jpg" width="274" height="380" alt="Витамины с iHerb">
+          </picture>
+        </div>
+        <div class="frame__descr">Omega800 (англ.) = Омега800</div>
+      </div>
+      <div class="banner__frame banner__frame-2 frame-2">
+        <img src="img/logo.svg" alt="logo" width="241" height="33" class="frame__logo">
+        <h2 class="frame-2__title">Теперь с доставкой за 1-2 дня</h2>
+        <div class="frame__image">
+          <picture>
+            <source srcset="img/img2.webp" type="image/webp">
+            <img loading="lazy" src="img/img2.jpg" width="274" height="380" alt="Витамины с iHerb">
+          </picture>
+        </div>
+        <div class="frame__descr">Buffered Gold C (англ.) = Бафферед Голд Ц</div>
+      </div>
+      <div class="banner__frame banner__frame-3 frame-3">
+        <img src="img/logo.svg" alt="logo" width="241" height="33" class="frame__logo">
+        <div class="frame-3__box">
+          <div class="frame-3__age">0+</div>
+          <div class="frame-3__text">Сервис Яндекс Маркет предоставляется ООО «ЯНДЕКС» (ОГРН 1027700229193,
+            119021, Москва, ул. Л. Толстого, д. 16). Время и территория доставки ограничены, подробнее
+            market.yandex.ru/my/order/conditions.
+          </div>
+          <div class="frame-3__bottom">
+            БАД.  Не является лекарственным средством.
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+  <script>document.getElementById("click_area").href = yandexHTML5BannerApi.getClickURLNum(1);</script>
+
+</body>
+
+</html>
